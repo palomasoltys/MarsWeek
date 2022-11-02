@@ -45,7 +45,7 @@ public class MarsExpedition {
         } else if(vehicleChoice.equalsIgnoreCase("B")) {
             vehicleChoice = "Chevy Silverado";
         } else if (vehicleChoice.equalsIgnoreCase("C")) {
-            System.out.println("Honda Civic");
+            vehicleChoice = "Honda Civic";
         } else {
             vehicleChoice = "Your feet";
         }
