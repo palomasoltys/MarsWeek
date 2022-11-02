@@ -34,6 +34,28 @@ public class MarsExpedition {
             System.out.println("That’s a perfect sized team. Good job.");
         }
 
+        System.out.println("You are allowed to bring one weapon with you. You know, just in case. What do you want to bring? ");
+        String weapon = input.nextLine();
+        System.out.println("Nice choice, you will be bringing a " + weapon + " with you.");
+        System.out.println("You have the choice of 3 vehicles: \nA: A Mars Rove \nB: A Chevy Silverado \nC: A Honda Civic");
+        String vehicleChoice = input.nextLine();
+
+        if(vehicleChoice.equalsIgnoreCase("A")) {
+            vehicleChoice = "Mars Roover";
+        } else if(vehicleChoice.equalsIgnoreCase("B")) {
+            vehicleChoice = "Chevy Silverado";
+        } else if (vehicleChoice.equalsIgnoreCase("C")) {
+            System.out.println("Honda Civic");
+        } else {
+            vehicleChoice = "Your feet";
+        }
+
+        System.out.println("Your expedition team is now ready \n Led by " + name + " with " + teamSize + " teammates. \n" +
+                "To explore the surface of Mars using " + vehicleChoice + ". \n" +
+                "Exploration team heads out in \n5...\n4...\n3...\n2...\n1...\nGO GO GO!" );
+
+
+
 
 
     }
